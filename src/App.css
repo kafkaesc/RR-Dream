@@ -1,3 +1,19 @@
+ul.social-links {
+  list-style: none;
+  padding: 0 16px;
+  text-align: center;
+}
+
+ul.social-links li {
+  display: inline-block;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+ul.social-links li img {
+  height: 32px;
+}
+
 .app-header {
   align-items: center;
   color: #fff;
