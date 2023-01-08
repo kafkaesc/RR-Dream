@@ -1,12 +1,6 @@
 import { useParams } from "react-router-dom";
 
-const cities = [
-  { cityCode: "DAL", id: 0, name: "Dallas" },
-  { cityCode: "AUS", id: 1, name: "Austin" },
-  { cityCode: "SAN", id: 2, name: "San Antonio" },
-  { cityCode: "HOU", id: 3, name: "Houston" },
-  { cityCode: "ELP", id: 4, name: "El Paso" },
-];
+const cities = require("data/cities.json");
 
 function City() {
   const { cityCode } = useParams();
