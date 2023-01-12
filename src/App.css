@@ -3,58 +3,58 @@
 @tailwind utilities;*/
 
 ul.social-links {
-  list-style: none;
-  padding: 0 16px;
-  text-align: center;
+	list-style: none;
+	padding: 0 16px;
+	text-align: center;
 }
 
 ul.social-links li {
-  display: inline-block;
-  margin-left: 16px;
-  margin-right: 16px;
+	display: inline-block;
+	margin-left: 16px;
+	margin-right: 16px;
 }
 
 ul.social-links li img {
-  height: 32px;
+	height: 32px;
 }
 
 .app-header {
-  align-items: center;
-  color: #fff;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  min-height: 128px;
+	align-items: center;
+	color: #fff;
+	background-color: #222;
+	display: flex;
+	justify-content: center;
+	min-height: 128px;
 }
 
 .app-header h1 {
-  font-size: 64px;
+	font-size: 64px;
 }
 
 .content-column {
-  margin: 0 auto;
-  max-width: 900px;
-  padding-left: 4px;
-  padding-right: 4px;
+	margin: 0 auto;
+	max-width: 900px;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .text-left {
-  text-align: left;
+	text-align: left;
 }
 
 .text-right {
-  text-align: right;
+	text-align: right;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
