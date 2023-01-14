@@ -7,31 +7,101 @@
 		"name": "Jeng-Chi Restaurant"
 	},
 	{
+		"address": "2455 Ridge Rd, Rockwall, TX 75087",
+		"cityId": 30001,
+		"id": 120002,
+		"locationCode": "CHILO",
+		"name": "Chilos Mexican Bistro"
+	},
+	{
+		"address": "Margaret Hunt Hill Bridge, Dallas, TX 75207",
+		"cityId": 30001,
+		"id": 120003,
+		"locationCode": "MARGA",
+		"name": "Margaret Hunt Hill Bridge"
+	},
+	{
 		"address": "2317 Speedway, Austin, TX 78712",
 		"cityId": 30002,
-		"id": 120002,
+		"id": 120004,
 		"locationCode": "UTGDC",
 		"name": "The Gates-Dell Complex at The University of Texas"
 	},
 	{
+		"address": "Barton Creek Greenbelt Trail, Austin, TX 78746",
+		"cityId": 30002,
+		"id": 120005,
+		"locationCode": "SCULP",
+		"name": "Sculpture Falls"
+	},
+	{
+		"address": "2438 W Anderson Ln. B1, Austin, TX 78757",
+		"cityId": 30002,
+		"id": 120006,
+		"locationCode": "DRAGO",
+		"name": "Dragon's Lair"
+	},
+	{
 		"address": "2332 Culebra Rd, San Antonio, TX 78228",
 		"cityId": 30003,
-		"id": 120003,
+		"id": 120007,
 		"locationCode": "CELOR",
 		"name": "Celorio Tortillas"
 	},
 	{
+		"address": "602 NW 24th St, San Antonio, TX 78207",
+		"cityId": 30003,
+		"id": 120008,
+		"locationCode": "PANIF",
+		"name": "Panifico Bake Shop"
+	},
+	{
+		"address": "3801 Broadway, San Antonio, TX 78209",
+		"cityId": 30003,
+		"id": 120009,
+		"locationCode": "WITTE",
+		"name": "Witte Museum"
+	},
+	{
 		"address": "1001 Bissonnet St, Houston, TX 77005",
 		"cityId": 30004,
-		"id": 120004,
+		"id": 120010,
 		"locationCode": "MFAHX",
 		"name": "The Museum of Fine Arts, Houston"
 	},
 	{
+		"address": "2005-D West Gray, Houston, Texas 77019",
+		"cityId": 30004,
+		"id": 120011,
+		"locationCode": "RYDEG",
+		"name": ""
+	},
+	{
+		"address": "401 Franklin St, Houston, TX 77201",
+		"cityId": 30004,
+		"id": 120012,
+		"locationCode": "HPOST",
+		"name": "POST"
+	},
+	{
 		"address": "4001 Dyer St #4, El Paso, TX 79930",
 		"cityId": 30005,
-		"id": 120005,
+		"id": 120013,
 		"locationCode": "DREAD",
 		"name": "Dreadful Things"
+	},
+	{
+		"address": "530 S Yarbrough Dr, El Paso, TX 79915",
+		"cityId": 30005,
+		"id": 120014,
+		"locationCode": "VALEN",
+		"name": "Valentine's Bakery"
+	},
+	{
+		"address": "Scenic Dr, El Paso, TX 79902",
+		"cityId": 30005,
+		"id": 120015,
+		"locationCode": "SCENI",
+		"name": "Scenic Drive Overlook"
 	}
 ]
