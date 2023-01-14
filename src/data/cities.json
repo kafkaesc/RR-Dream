@@ -1,7 +1,7 @@
 [
-  { "cityCode": "DAL", "id": 30001, "name": "Dallas" },
-  { "cityCode": "AUS", "id": 30002, "name": "Austin" },
-  { "cityCode": "SAN", "id": 30003, "name": "San Antonio" },
-  { "cityCode": "HOU", "id": 30004, "name": "Houston" },
-  { "cityCode": "ELP", "id": 30005, "name": "El Paso" }
+	{ "cityCode": "DAL", "id": 30001, "name": "Dallas" },
+	{ "cityCode": "AUS", "id": 30002, "name": "Austin" },
+	{ "cityCode": "SAN", "id": 30003, "name": "San Antonio" },
+	{ "cityCode": "HOU", "id": 30004, "name": "Houston" },
+	{ "cityCode": "ELP", "id": 30005, "name": "El Paso" }
 ]
