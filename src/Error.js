@@ -12,6 +12,10 @@ function Error() {
 				<p>
 					<Link to="/Home">Click here</Link> to go home.
 				</p>
+				<img
+					alt="A derailed steam locomotive hangs out the second floor of a train station."
+					src={require('assets/images/crash.jpg')}
+				/>
 			</div>
 		</div>
 	);
