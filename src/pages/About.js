@@ -1,9 +1,14 @@
+import H2 from 'elements/H2';
+import P from 'elements/P';
+
+import SocialLinks from 'components/SocialLinks';
+
 function About() {
 	return (
 		<div className="content-column">
-			<h2>About</h2>
-			<p>About this project.</p>
-			<p>
+			<H2>About</H2>
+			<P>About this project.</P>
+			<P>
 				The full code for this site can be viewed on{' '}
 				<a
 					href="https://github.com/kafkaesc/RR-Dream"
@@ -13,46 +18,9 @@ function About() {
 					GitHub
 				</a>
 				.
-			</p>
-			<p className="text-center">Built by Jared Hettinger</p>
-			<ul className="social-links">
-				<li>
-					<a
-						href="https://www.github.com/kafkaesc"
-						rel="noreferrer"
-						target="_blank"
-					>
-						<img
-							alt="GitHub"
-							src={require('assets/images/social/github.png')}
-						/>
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://www.twitter.com/_kafkaesc"
-						rel="noreferrer"
-						target="_blank"
-					>
-						<img
-							alt="Twitter"
-							src={require('assets/images/social/twitter.png')}
-						/>
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://www.instagram.com/kafkaesc"
-						rel="noreferrer"
-						target="_blank"
-					>
-						<img
-							alt="Instagram"
-							src={require('assets/images/social/instagram.png')}
-						/>
-					</a>
-				</li>
-			</ul>
+			</P>
+			<P className="text-center">Built by Jared Hettinger</P>
+			<SocialLinks />
 		</div>
 	);
 }

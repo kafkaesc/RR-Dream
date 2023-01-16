@@ -1,5 +1,8 @@
 import { useParams } from 'react-router-dom';
 
+import H2 from 'elements/H2';
+import P from 'elements/P';
+
 const cities = require('data/cities.json');
 
 function City() {
@@ -8,10 +11,10 @@ function City() {
 
 	return (
 		<div className="content-column">
-			<h2>
+			<H2>
 				{city.name} ({city.cityCode})
-			</h2>
-			<p>Welcome to {city.name}</p>
+			</H2>
+			<P>Welcome to {city.name}</P>
 			<img
 				alt={`A street scene of ${city.name}.`}
 				src={require(`assets/images/${city.name

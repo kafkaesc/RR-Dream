@@ -1,6 +1,6 @@
-/*@tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities;*/
+@tailwind utilities;
 
 ul.social-links {
 	list-style: none;
@@ -21,7 +21,6 @@ ul.social-links li img {
 .app-header {
 	align-items: center;
 	color: #fff;
-	background-color: #222;
 	display: flex;
 	justify-content: center;
 	min-height: 128px;
