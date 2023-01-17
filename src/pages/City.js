@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import H2 from 'elements/H2';
 import P from 'elements/P';
 
+import Navigation from 'components/Navigation';
+
 const cities = require('data/cities.json');
 
 function City() {
@@ -21,6 +23,7 @@ function City() {
 					.toLowerCase()
 					.replace(' ', '-')}.jpg`)}
 			/>
+			<Navigation showHome={true} />
 		</div>
 	);
 }

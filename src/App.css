@@ -20,12 +20,3 @@
 	padding-left: 4px;
 	padding-right: 4px;
 }
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
