@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
-import './Output.css';
+import './output.css';
 import './App.css';
 
 function App() {
