@@ -22,12 +22,11 @@ function Home() {
 			<P>
 				<Link to="/About">About</Link>
 			</P>
-			<div className="align-center">
-				<img
-					alt="A black and white scene of a train arriving into a station from the French film The Arrival of a Train at La Ciotat Station."
-					src={require('assets/images/larrivee-dun-train.jpg')}
-				/>
-			</div>
+			<img
+				alt="A black and white scene of a train arriving into a station from the French film The Arrival of a Train at La Ciotat Station."
+				className="mx-auto"
+				src={require('assets/images/larrivee-dun-train.jpg')}
+			/>
 		</div>
 	);
 }

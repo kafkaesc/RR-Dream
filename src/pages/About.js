@@ -19,8 +19,8 @@ function About() {
 				</a>
 				.
 			</P>
-			<P className="text-center">Built by Jared Hettinger</P>
 			<SocialLinks />
+			<P className="text-center">Built by Jared Hettinger</P>
 		</div>
 	);
 }

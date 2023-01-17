@@ -1,6 +1,6 @@
 # Texas Rail
 
-This project is an example of how to use [React Router](https://reactrouter.com/), a routing library for [React](https://reactjs.org).
+This site is a [React](https://reactjs.org) single-page app. It uses [React Router](https://reactrouter.com/) for routing. It utilizes [Tailwind](https://tailwindcss.com) for site styles.
 
 To run the Tailwind watcher:
 
