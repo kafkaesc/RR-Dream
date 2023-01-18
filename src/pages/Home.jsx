@@ -1,8 +1,7 @@
-//import { Link } from 'react-router-dom';
 import H2 from 'elements/H2';
-//import Link from 'elements/Link';
 import P from 'elements/P';
 
+import LocationCard from 'components/LocationCard';
 import Navigation from 'components/Navigation';
 
 function Home() {
@@ -16,6 +15,7 @@ function Home() {
 				className="mx-auto"
 				src={require('assets/images/larrivee-dun-train.jpg')}
 			/>
+			<LocationCard />
 		</div>
 	);
 }
