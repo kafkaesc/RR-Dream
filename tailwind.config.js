@@ -9,6 +9,7 @@ module.exports = {
 			'error-light': '#f5c6cb',
 			'gray-c': '#ccc',
 			'gray-d': '#ddd',
+			'gray-e': '#eee',
 			'link-blue': '#00d',
 			'rail-black': '#222',
 			'success-dark': '#165824',
