@@ -1,11 +1,13 @@
 import H2 from 'elements/H2';
 import P from 'elements/P';
 
+import ContentColumn from 'layout/ContentColumn';
+
 import Navigation from 'components/Navigation';
 
 function Home() {
 	return (
-		<div className="content-column text-center">
+		<ContentColumn className="text-center">
 			<H2>Home</H2>
 			<P>A React site about the dream of rail in Texas.</P>
 			<Navigation />
@@ -14,7 +16,7 @@ function Home() {
 				className="mx-auto"
 				src={require('assets/images/larrivee-dun-train.jpg')}
 			/>
-		</div>
+		</ContentColumn>
 	);
 }
 

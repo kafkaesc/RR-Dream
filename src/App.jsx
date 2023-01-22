@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 
 import H1 from 'elements/H1';
 
-import AppHeader from 'components/AppHeader';
+import AppHeader from 'layout/AppHeader';
 
 import './output.css';
 import './App.css';
