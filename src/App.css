@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.app-header {
-	align-items: center;
-	color: #fff;
-	display: flex;
-	justify-content: center;
-	min-height: 128px;
-}
-
-.app-header h1 {
-	font-size: 64px;
-}
-
 .content-column {
 	margin: 0 auto;
 	max-width: 900px;

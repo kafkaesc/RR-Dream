@@ -4,8 +4,8 @@ module.exports = {
 	theme: {
 		extend: {},
 		colors: {
-			beast: '#666',
-			'error-dark': '721c24',
+			black: '#000',
+			'error-dark': '#721c24',
 			'error-light': '#f5c6cb',
 			'gray-c': '#ccc',
 			'gray-d': '#ddd',
@@ -14,8 +14,10 @@ module.exports = {
 			'rail-black': '#222',
 			'success-dark': '#165824',
 			'success-light': '#d4eddd',
+			'the-beast': '#666',
 			'warning-dark': '#960',
 			'warning-light': '#ffeeba',
+			white: '#fff',
 		},
 	},
 	plugins: [],

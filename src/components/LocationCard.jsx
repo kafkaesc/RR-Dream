@@ -1,19 +1,19 @@
-// TODO: Build out a locatin card.
+// TODO: Build out a location card.
 function LocationCard({ location }) {
 	return (
-		<figure class="bg-gray-e overflow-hidden p-8 rounded-xl md:flex md:p-0">
+		<figure class="bg-gray-e flex overflow-hidden p-0 rounded-xl">
 			<img
-				class="w-24 h-24 rounded-full mx-auto md:w-48 md:h-auto md:rounded-none"
+				alt="Tangbao, or Chinese soup dumplings, sin in a bamboo steamer on top of a restaurant table."
+				class="h-auto mx-auto w-32 md:w-48"
+				height="512"
 				src={require(`assets/images/location/${location.locationCode
 					.toLowerCase()
 					.replace(' ', '-')}.jpg`)}
-				alt="Tangbao, or Chinese soup dumplings, sin in a bamboo steamer on top of a restaurant table."
 				width="384"
-				height="512"
 			/>
-			<div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+			<div class="p-4 pt-6 space-y-4 text-left md:p-8">
 				<blockquote>
-					<p class="text-lg font-medium">
+					<p class="text-md md:text-lg">
 						Jeng Chi Restaurant is a fantastic restaurant with a phenomenal
 						menu. The green onion pancake is flaky, golden, and perfectly fried.
 						Their soup dumplings are hard to beat and you won't want to miss

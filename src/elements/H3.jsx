@@ -1,5 +1,5 @@
 function H3(props) {
-	const classNames = 'mb-4 ' + props.className;
+	const classNames = props.className ? 'mb-4 ' + props.className : 'mb-4';
 	// This is a wrapper component--the element content
 	// should be passed via props.
 	// eslint-disable-next-line
