@@ -4,104 +4,119 @@
 		"cityId": 30001,
 		"id": 120001,
 		"locationCode": "JENGC",
-		"name": "Jeng-Chi Restaurant"
+		"name": "Jeng-Chi Restaurant",
+		"shortName": "Jeng-Chi"
 	},
 	{
 		"address": "2455 Ridge Rd, Rockwall, TX 75087",
 		"cityId": 30001,
 		"id": 120002,
 		"locationCode": "CHILO",
-		"name": "Chilos Mexican Bistro"
+		"name": "Chiloso Mexican Bistro",
+		"shortName": "Chiloso"
 	},
 	{
 		"address": "Margaret Hunt Hill Bridge, Dallas, TX 75207",
 		"cityId": 30001,
 		"id": 120003,
 		"locationCode": "MARGA",
-		"name": "Margaret Hunt Hill Bridge"
+		"name": "Margaret Hunt Hill Bridge",
+		"shortName": "Margaret Hunt Hill Bridge"
 	},
 	{
 		"address": "2317 Speedway, Austin, TX 78712",
 		"cityId": 30002,
 		"id": 120004,
 		"locationCode": "UTGDC",
-		"name": "The Gates-Dell Complex at The University of Texas"
+		"name": "The Gates-Dell Complex at The University of Texas",
+		"shortName": "The GDC"
 	},
 	{
 		"address": "Barton Creek Greenbelt Trail, Austin, TX 78746",
 		"cityId": 30002,
 		"id": 120005,
 		"locationCode": "SCULP",
-		"name": "Sculpture Falls"
+		"name": "Sculpture Falls",
+		"shortName": "Sculpture Falls"
 	},
 	{
 		"address": "2438 W Anderson Ln. B1, Austin, TX 78757",
 		"cityId": 30002,
 		"id": 120006,
 		"locationCode": "DRAGO",
-		"name": "Dragon's Lair"
+		"name": "Dragon's Lair Comics & Fantasy",
+		"shortName": "Dragon's Lair"
 	},
 	{
 		"address": "2332 Culebra Rd, San Antonio, TX 78228",
 		"cityId": 30003,
 		"id": 120007,
 		"locationCode": "CELOR",
-		"name": "Celorio Tortillas"
+		"name": "Celorio Tortillas",
+		"shortName": "Celorio"
 	},
 	{
 		"address": "602 NW 24th St, San Antonio, TX 78207",
 		"cityId": 30003,
 		"id": 120008,
 		"locationCode": "PANIF",
-		"name": "Panifico Bake Shop"
+		"name": "Panifico Bake Shop",
+		"shortName": "Panifico"
 	},
 	{
 		"address": "3801 Broadway, San Antonio, TX 78209",
 		"cityId": 30003,
 		"id": 120009,
 		"locationCode": "WITTE",
-		"name": "Witte Museum"
+		"name": "Witte Museum",
+		"shortName": "Witte Museum"
 	},
 	{
 		"address": "1001 Bissonnet St, Houston, TX 77005",
 		"cityId": 30004,
 		"id": 120010,
 		"locationCode": "MFAHX",
-		"name": "The Museum of Fine Arts, Houston"
+		"name": "The Museum of Fine Arts, Houston",
+		"shortName": "MFAH"
 	},
 	{
 		"address": "2005-D West Gray, Houston, Texas 77019",
 		"cityId": 30004,
 		"id": 120011,
 		"locationCode": "RYDEG",
-		"name": ""
+		"name": "RYDE",
+		"shortName": "RYDE"
 	},
 	{
 		"address": "401 Franklin St, Houston, TX 77201",
 		"cityId": 30004,
 		"id": 120012,
-		"locationCode": "HPOST",
-		"name": "POST"
+		"locationCode": "POSTH",
+		"name": "POST Houston",
+		"shortName": "POST"
 	},
 	{
 		"address": "4001 Dyer St #4, El Paso, TX 79930",
 		"cityId": 30005,
 		"id": 120013,
 		"locationCode": "DREAD",
-		"name": "Dreadful Things"
+		"name": "Dreadful Things",
+		"shortName": "Dreadful Things"
 	},
 	{
 		"address": "530 S Yarbrough Dr, El Paso, TX 79915",
 		"cityId": 30005,
 		"id": 120014,
 		"locationCode": "VALEN",
-		"name": "Valentine's Bakery"
+		"name": "Valentine's Bakery",
+		"shortName": "Valentine's Bakery"
 	},
 	{
 		"address": "Scenic Dr, El Paso, TX 79902",
 		"cityId": 30005,
 		"id": 120015,
 		"locationCode": "SCENI",
-		"name": "Scenic Drive Overlook"
+		"name": "Scenic Drive Overlook",
+		"shortName": "Scenic Drive Overlook"
 	}
 ]
