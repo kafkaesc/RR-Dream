@@ -6,7 +6,7 @@ const socialLinks = [
 
 function SocialLinks() {
 	return (
-		<ul className="list-none mb-2 text-center">
+		<ul className="mb-2 text-center list-none">
 			{socialLinks.map((sl) => {
 				return (
 					<li

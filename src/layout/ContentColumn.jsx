@@ -1,7 +1,7 @@
 function ContentColumn(props) {
 	const classNames = props.className
-		? 'max-w-4xl mx-auto px-4 ' + props.className
-		: 'max-w-4xl mx-auto px-4';
+		? 'max-w-4xl px-4 mx-auto ' + props.className
+		: 'max-w-4xl px-4 mx-auto';
 	return (
 		<div {...props} className={classNames}>
 			{props.children}

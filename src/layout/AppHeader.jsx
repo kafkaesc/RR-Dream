@@ -1,8 +1,8 @@
 function AppHeader(props) {
 	const classNames = props.className
-		? 'bg-rail-black flex h-32 items-center justify-center text-white ' +
+		? 'flex items-center justify-center h-32 text-white bg-rail-black ' +
 		  props.className
-		: 'bg-rail-black flex h-32 items-center justify-center text-white';
+		: 'flex items-center justify-center h-32 text-white bg-rail-black';
 	return (
 		<header {...props} className={classNames}>
 			{props.children}
