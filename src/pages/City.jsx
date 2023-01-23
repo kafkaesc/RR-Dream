@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import H2 from 'elements/H2';
 import P from 'elements/P';
 
+import ContentColumn from 'layout/ContentColumn';
+
 import LocationCard from 'components/LocationCard';
 import Navigation from 'components/Navigation';
 
@@ -15,7 +17,7 @@ function City() {
 	const locations = allLocations.filter((lo) => lo.cityId === city.id);
 
 	return (
-		<div className="content-column">
+		<ContentColumn>
 			<H2>
 				{city.name} ({city.cityCode})
 			</H2>
@@ -32,7 +34,7 @@ function City() {
 				</div>
 			)}
 			<Navigation showHome={true} />
-		</div>
+		</ContentColumn>
 	);
 }
 

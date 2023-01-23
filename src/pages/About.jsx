@@ -1,11 +1,13 @@
 import H2 from 'elements/H2';
 import P from 'elements/P';
 
+import ContentColumn from 'layout/ContentColumn';
+
 import SocialLinks from 'components/SocialLinks';
 
 function About() {
 	return (
-		<div className="content-column">
+		<ContentColumn>
 			<H2>About</H2>
 			<P>About this project.</P>
 			<P>
@@ -21,7 +23,7 @@ function About() {
 			</P>
 			<SocialLinks />
 			<P className="text-center">Built by Jared Hettinger</P>
-		</div>
+		</ContentColumn>
 	);
 }
 

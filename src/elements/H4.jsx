@@ -1,11 +1,11 @@
-function H2(props) {
+function H4(props) {
 	const classNames = props.className
-		? 'mb-4 text-4xl ' + props.className
-		: 'mb-4 text-4xl';
+		? 'mb-4 text-lg ' + props.className
+		: 'mb-4 text-lg';
 	// This is a wrapper component--the element content
 	// should be passed via props.
 	// eslint-disable-next-line
-	return <h2 {...props} className={classNames}></h2>;
+	return <h3 {...props} className={classNames}></h3>;
 }
 
-export default H2;
+export default H4;
