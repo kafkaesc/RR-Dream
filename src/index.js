@@ -7,6 +7,7 @@ import App from 'App';
 import City from 'pages/City';
 import Error from 'Error';
 import Home from 'pages/Home';
+import Location from 'pages/Location';
 import reportWebVitals from './reportWebVitals';
 
 import './index.css';
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
 			{ path: '/About', element: <About /> },
 			{ path: '/City/:cityCode', element: <City /> },
 			{ path: '/Home', element: <Home /> },
+			{ path: '/Location/:locationCode', element: <Location /> },
 		],
 	},
 ]);
