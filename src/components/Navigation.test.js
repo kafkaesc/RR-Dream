@@ -26,6 +26,12 @@ test('Has Houston Navigation', () => {
 	expect(sanAntonioNavigationElement).toBeInTheDocument();
 });
 
+test('Has El Paso Navigation', () => {
+	render(<Navigation />, { wrapper: MemoryRouter });
+	const elPasNavigationElement = screen.getByText('El Paso');
+	expect(elPasNavigationElement).toBeInTheDocument();
+});
+
 test('Displays Home When showHome = true', () => {
 	render(<Navigation showHome={true} />, { wrapper: MemoryRouter });
 	const homeNavigationElement = screen.queryByText('Home');
