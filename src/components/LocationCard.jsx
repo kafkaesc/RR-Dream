@@ -3,7 +3,7 @@ function LocationCard({ location }) {
 	return (
 		<figure className="flex p-0 overflow-hidden bg-gray-e rounded-xl">
 			<img
-				alt="Tangbao, or Chinese soup dumplings, sin in a bamboo steamer on top of a restaurant table."
+				alt="Tangbao, or Chinese soup dumplings, sit in a bamboo steamer on top of a restaurant table."
 				className="w-32 h-auto mx-auto md:w-48"
 				height="512"
 				src={require(`assets/images/location/${location.locationCode
