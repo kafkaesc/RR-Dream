@@ -1,3 +1,4 @@
+import A from 'elements/A';
 import H2 from 'elements/H2';
 import P from 'elements/P';
 
@@ -12,13 +13,13 @@ function About() {
 			<P>About this project.</P>
 			<P>
 				The full code for this site can be viewed on{' '}
-				<a
+				<A
 					href="https://github.com/kafkaesc/RR-Dream"
 					rel="noreferrer"
 					target="_blank"
 				>
 					GitHub
-				</a>
+				</A>
 				.
 			</P>
 			<SocialLinks />
