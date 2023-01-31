@@ -11,7 +11,7 @@ test('Has Page Header', () => {
 test('Has Full Code Acknowledgment', () => {
 	render(<About />);
 	const fullCodeElement = screen.getByText(
-		/The full code for this site can be viewed/
+		/full code for this site can be viewed/i
 	);
 	expect(fullCodeElement).toBeInTheDocument();
 });
