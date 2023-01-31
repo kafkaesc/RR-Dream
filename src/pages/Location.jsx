@@ -5,6 +5,7 @@ import P from 'elements/P';
 
 import ContentColumn from 'layout/ContentColumn';
 import Navigation from 'components/Navigation';
+import PageError from 'components/PageError';
 
 const locations = require('data/locations.json');
 
@@ -13,6 +14,10 @@ function Location() {
 	const location = locations.filter(
 		(lo) => lo.locationCode === locationCode
 	)[0];
+
+	if (!location) {
+		return <PageError uiMessage="No location found." />;
+	}
 
 	return (
 		<ContentColumn>

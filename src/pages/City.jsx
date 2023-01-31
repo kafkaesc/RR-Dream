@@ -7,6 +7,7 @@ import ContentColumn from 'layout/ContentColumn';
 
 import LocationCard from 'components/LocationCard';
 import Navigation from 'components/Navigation';
+import PageError from 'components/PageError';
 
 const cities = require('data/cities.json');
 const allLocations = require('data/locations.json');
@@ -14,6 +15,10 @@ const allLocations = require('data/locations.json');
 function City() {
 	const { cityCode } = useParams();
 	const city = cities.find((ci) => ci.cityCode === cityCode);
+	console.log('city: ', city);
+	if (!city) {
+		return <PageError uiMessage="No city found." />;
+	}
 	const locations = allLocations.filter((lo) => lo.cityId === city.id);
 
 	return (
