@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 import About from 'pages/About';
 import App from 'App';
@@ -12,8 +12,9 @@ import reportWebVitals from './reportWebVitals';
 
 import './index.css';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
+		basename: '/RR-Dream',
 		path: '/',
 		element: <App />,
 		errorElement: <Error />,
