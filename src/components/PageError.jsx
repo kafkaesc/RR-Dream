@@ -7,7 +7,7 @@ import ContentColumn from 'layout/ContentColumn';
 function PageError({ uiMessage }) {
 	return (
 		<ContentColumn className="text-center">
-			<H2>There Was a Problem Loading That Page</H2>
+			<H2>There Was a Problem Loading the Page</H2>
 			{uiMessage && <P>{uiMessage}</P>}
 			<P>
 				<Link to="/Home">Click here</Link> to go home.

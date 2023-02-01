@@ -47,8 +47,17 @@ test('El Paso Loads', () => {
 	expect(cityHeaderElement).toHaveTextContent('El Paso');
 });
 
-// TODO: Create an errorTest wrapper that always disables and re-enables
-// the console.error to keep expected error tests clean and dry.
+test('Oklahoma City Fails', () => {
+	render(<CityAndPath cityCode="OKL" />);
+	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
+	expect(cityHeaderElement).toBeInTheDocument();
+	expect(cityHeaderElement).toHaveTextContent(
+		/there was a problem loading the page/i
+	);
+});
+
+// Not used here but could be useful testing for thrown errors later.
+/*
 test('Invalid City Throws Error', () => {
 	const errorObject = console.error;
 	console.error = jest.fn();
@@ -59,3 +68,4 @@ test('Invalid City Throws Error', () => {
 
 	console.error = errorObject;
 });
+*/

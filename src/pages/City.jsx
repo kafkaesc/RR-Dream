@@ -15,7 +15,6 @@ const allLocations = require('data/locations.json');
 function City() {
 	const { cityCode } = useParams();
 	const city = cities.find((ci) => ci.cityCode === cityCode);
-	console.log('city: ', city);
 	if (!city) {
 		return <PageError uiMessage="No city found." />;
 	}

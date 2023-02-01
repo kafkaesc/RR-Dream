@@ -47,13 +47,11 @@ test("Valentine's Bakery Loads", () => {
 	expect(locationHeaderElement).toHaveTextContent("Valentine's");
 });
 
-test('Invalid Location Throws Error', () => {
-	const errorObject = console.error;
-	console.error = jest.fn();
-
-	expect(() => render(<LocationAndPath locationCode="Tacodeli" />)).toThrow(
-		"Cannot read properties of undefined (reading 'name')"
+test('Invalid Location Error', () => {
+	render(<LocationAndPath locationCode="Tacodeli" />);
+	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
+	expect(locationHeaderElement).toBeInTheDocument();
+	expect(locationHeaderElement).toHaveTextContent(
+		/there was a problem loading the page/i
 	);
-
-	console.error = errorObject;
 });
