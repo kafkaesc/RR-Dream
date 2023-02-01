@@ -1,7 +1,7 @@
 {
 	"name": "rr-dream",
 	"version": "0.1.0",
-	"homepage": "https://kafkaesc.github.io/RR-Dream",
+	"homepage": "https://kafkaesc.github.io/RR-Dream/",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
@@ -40,6 +40,7 @@
 		]
 	},
 	"devDependencies": {
+		"gh-pages": "^5.0.0",
 		"tailwindcss": "^3.2.4"
 	}
 }
