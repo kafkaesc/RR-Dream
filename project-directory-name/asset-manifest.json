@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RR-Dream/static/css/main.21572640.css",
-    "main.js": "/RR-Dream/static/js/main.c5211d10.js",
+    "main.js": "/RR-Dream/static/js/main.a8dbaee5.js",
     "static/js/787.cb31eccf.chunk.js": "/RR-Dream/static/js/787.cb31eccf.chunk.js",
     "static/media/jengc.jpg": "/RR-Dream/static/media/jengc.b162c114f9a0326d6591.jpg",
     "static/media/dallas.jpg": "/RR-Dream/static/media/dallas.a951e217dc2ea58c36d6.jpg",
@@ -14,11 +14,11 @@
     "static/media/twitter.png": "/RR-Dream/static/media/twitter.9685c410a6499b9ebc16.png",
     "index.html": "/RR-Dream/index.html",
     "main.21572640.css.map": "/RR-Dream/static/css/main.21572640.css.map",
-    "main.c5211d10.js.map": "/RR-Dream/static/js/main.c5211d10.js.map",
+    "main.a8dbaee5.js.map": "/RR-Dream/static/js/main.a8dbaee5.js.map",
     "787.cb31eccf.chunk.js.map": "/RR-Dream/static/js/787.cb31eccf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21572640.css",
-    "static/js/main.c5211d10.js"
+    "static/js/main.a8dbaee5.js"
   ]
 }
