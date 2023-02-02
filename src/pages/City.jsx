@@ -5,12 +5,12 @@ import P from 'elements/P';
 
 import ContentColumn from 'layout/ContentColumn';
 
-//import LocationCard from 'components/LocationCard';
+import LocationCard from 'components/LocationCard';
 import Navigation from 'components/Navigation';
 import PageError from 'components/PageError';
 
 const cities = require('data/cities.json');
-//const allLocations = require('data/locations.json');
+const allLocations = require('data/locations.json');
 
 function City() {
 	const { cityCode } = useParams();
@@ -18,7 +18,7 @@ function City() {
 	if (!city) {
 		return <PageError uiMessage="No city found." />;
 	}
-	//const locations = allLocations.filter((lo) => lo.cityId === city.id);
+	const locations = allLocations.filter((lo) => lo.cityId === city.id);
 
 	return (
 		<ContentColumn>
@@ -32,11 +32,11 @@ function City() {
 					.toLowerCase()
 					.replace(' ', '-')}.jpg`)}
 			/>
-			{/*city.cityCode === 'DAL' && (
+			{city.cityCode === 'DAL' && (
 				<div className="my-2">
 					<LocationCard location={locations[0]} />
 				</div>
-			)*/}
+			)}
 			<Navigation showHome={true} />
 		</ContentColumn>
 	);
