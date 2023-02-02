@@ -16,7 +16,12 @@ function City() {
 	const { cityCode } = useParams();
 	const city = cities.find((ci) => ci.cityCode === cityCode);
 	if (!city) {
-		return <PageError uiMessage="No city found." />;
+		return (
+			<PageError
+				errorMessage={`Invalid cityCode passed into the City component in /pages/City.jsx: ${cityCode}`}
+				uiMessage="Unable to find that city."
+			/>
+		);
 	}
 	const locations = allLocations.filter((lo) => lo.cityId === city.id);
 
