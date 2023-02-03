@@ -4,7 +4,6 @@ import H2 from 'elements/H2';
 import P from 'elements/P';
 
 import ContentColumn from 'layout/ContentColumn';
-import Navigation from 'components/Navigation';
 import PageError from 'components/PageError';
 
 const locations = require('data/locations.json');
@@ -28,7 +27,6 @@ function Location() {
 		<ContentColumn>
 			<H2>{location.name}</H2>
 			<P>{location.address}</P>
-			<Navigation showHome={true} />
 		</ContentColumn>
 	);
 }
