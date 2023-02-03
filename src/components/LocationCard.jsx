@@ -1,7 +1,7 @@
 // TODO: Build out a location card.
 function LocationCard({ location }) {
 	return (
-		<figure className="flex p-0 overflow-hidden bg-gray-e rounded-xl">
+		<figure className="flex p-0 overflow-hidden bg-rail-white-dark rounded-xl">
 			<img
 				alt="Tangbao, or Chinese soup dumplings, sit in a bamboo steamer on top of a restaurant table."
 				className="w-32 h-auto mx-auto md:w-48"

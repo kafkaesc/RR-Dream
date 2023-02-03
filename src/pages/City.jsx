@@ -6,7 +6,6 @@ import P from 'elements/P';
 import ContentColumn from 'layout/ContentColumn';
 
 import LocationCard from 'components/LocationCard';
-import Navigation from 'components/Navigation';
 import PageError from 'components/PageError';
 
 const cities = require('data/cities.json');
@@ -42,7 +41,6 @@ function City() {
 					<LocationCard location={locations[0]} />
 				</div>
 			)}
-			<Navigation showHome={true} />
 		</ContentColumn>
 	);
 }
