@@ -15,7 +15,7 @@ function PageError({ errorMessage, uiMessage }) {
 			<H2>There Was a Problem Loading the Page</H2>
 			{uiMessage && <P>{uiMessage}</P>}
 			<P>
-				<Link to="/Home">Click here</Link> to go home.
+				<Link to="/Home">Click here to go home</Link>
 			</P>
 		</ContentColumn>
 	);

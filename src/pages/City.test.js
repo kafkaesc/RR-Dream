@@ -14,37 +14,37 @@ function CityAndPath({ cityCode }) {
 
 it('Loads Dallas', () => {
 	render(<CityAndPath cityCode="DAL" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent(/dallas/i);
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/dallas/i);
 });
 
 it('Loads Austin', () => {
 	render(<CityAndPath cityCode="AUS" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent(/austin/i);
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/austin/i);
 });
 
 it('Loads San Antonio', () => {
 	render(<CityAndPath cityCode="SAN" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent(/san antonio/i);
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/san antonio/i);
 });
 
 it('Loads Houston', () => {
 	render(<CityAndPath cityCode="HOU" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent(/houston/i);
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/houston/i);
 });
 
 it('Loads El Paso', () => {
 	render(<CityAndPath cityCode="ELP" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent(/el paso/i);
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/el paso/i);
 });
 
 it('Handles Invalid cityCode Props', () => {
@@ -52,11 +52,9 @@ it('Handles Invalid cityCode Props', () => {
 	console.error = jest.fn();
 
 	render(<CityAndPath cityCode="OKL" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent(
-		/there was a problem loading the page/i
-	);
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/there was a problem loading the page/i);
 
 	console.error = errorObject;
 });

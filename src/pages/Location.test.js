@@ -14,37 +14,37 @@ function LocationAndPath({ locationCode }) {
 
 it('Loads Jeng-Chi', () => {
 	render(<LocationAndPath locationCode="JENGC" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent(/jeng-chi/i);
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(/jeng-chi/i);
 });
 
 it('Loads The GDC', () => {
 	render(<LocationAndPath locationCode="UTGDC" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent(/gates-dell complex/i);
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(/gates-dell complex/i);
 });
 
 it('Loads Celorio', () => {
 	render(<LocationAndPath locationCode="CELOR" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent(/celorio/i);
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(/celorio/i);
 });
 
 it('Loads RYDE', () => {
 	render(<LocationAndPath locationCode="RYDEG" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent(/ryde/i);
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(/ryde/i);
 });
 
 it("Loads Valentine's Bakery", () => {
 	render(<LocationAndPath locationCode="VALEN" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent(/valentine's/i);
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(/valentine's/i);
 });
 
 it('Handles Invalid locationCode Props', () => {
@@ -52,9 +52,9 @@ it('Handles Invalid locationCode Props', () => {
 	console.error = jest.fn();
 
 	render(<LocationAndPath locationCode="Tacodeli" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent(
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(
 		/there was a problem loading the page/i
 	);
 

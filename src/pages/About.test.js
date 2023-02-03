@@ -4,9 +4,9 @@ import About from './About';
 
 it('Has a Page Header', () => {
 	render(<About />, { wrapper: MemoryRouter });
-	const pageHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(pageHeaderElement).toBeInTheDocument();
-	expect(pageHeaderElement).toHaveTextContent(/about/i);
+	const pageHeader = screen.getByRole('heading', { level: 2 });
+	expect(pageHeader).toBeInTheDocument();
+	expect(pageHeader).toHaveTextContent(/about/i);
 });
 
 it('Has the Full Code Acknowledgment', () => {
@@ -19,9 +19,9 @@ it('Has the Full Code Acknowledgment', () => {
 
 it('Has a GitHub Link to the Project Repository', () => {
 	render(<About />, { wrapper: MemoryRouter });
-	const gitHubLinkElement = screen.getByRole('link', { name: 'GitHub' });
-	expect(gitHubLinkElement).toBeInTheDocument();
-	expect(gitHubLinkElement).toHaveAttribute(
+	const gitHubLink = screen.getByRole('link', { name: 'GitHub' });
+	expect(gitHubLink).toBeInTheDocument();
+	expect(gitHubLink).toHaveAttribute(
 		'href',
 		'https://github.com/kafkaesc/RR-Dream'
 	);
