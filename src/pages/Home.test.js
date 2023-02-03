@@ -2,16 +2,17 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import Home from './Home';
 
-test('Has Page Header', () => {
+it('Has Page Header', () => {
 	render(<Home />, { wrapper: MemoryRouter });
-	const pageHeaderElement = screen.getByText(/a react site/i);
-	expect(pageHeaderElement).toBeInTheDocument();
+	const pageHeader = screen.getByRole('heading', { level: 2 });
+	expect(pageHeader).toBeInTheDocument();
+	expect(pageHeader).toHaveTextContent(/home/i);
 });
 
-test('Has Train Image', () => {
+it('Has Train Image', () => {
 	render(<Home />, { wrapper: MemoryRouter });
-	const theArrivalOfATrainElement = screen.getByAltText(
-		/a black and white scene of a train/i
-	);
-	expect(theArrivalOfATrainElement).toBeInTheDocument();
+	const theArrivalOfATrainImage = screen.getByRole('img', {
+		name: /a black and white scene of a train/i,
+	});
+	expect(theArrivalOfATrainImage).toBeInTheDocument();
 });
