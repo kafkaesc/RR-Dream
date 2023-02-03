@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import Location from './Location';
 
-const LocationAndPath = ({ locationCode }) => {
+function LocationAndPath({ locationCode }) {
 	return (
 		<MemoryRouter initialEntries={[`/Location/${locationCode}`]}>
 			<Routes>
@@ -10,48 +10,53 @@ const LocationAndPath = ({ locationCode }) => {
 			</Routes>
 		</MemoryRouter>
 	);
-};
+}
 
-test('Jeng-Chi Loads', () => {
+it('Loads Jeng-Chi', () => {
 	render(<LocationAndPath locationCode="JENGC" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent('Jeng-Chi');
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(/jeng-chi/i);
 });
 
-test('The GDC Loads', () => {
+it('Loads The GDC', () => {
 	render(<LocationAndPath locationCode="UTGDC" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent('Gates-Dell Complex');
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(/gates-dell complex/i);
 });
 
-test('Celorio Loads', () => {
+it('Loads Celorio', () => {
 	render(<LocationAndPath locationCode="CELOR" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent('Celorio');
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(/celorio/i);
 });
 
-test('RYDE Loads', () => {
+it('Loads RYDE', () => {
 	render(<LocationAndPath locationCode="RYDEG" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent('RYDE');
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(/ryde/i);
 });
 
-test("Valentine's Bakery Loads", () => {
+it("Loads Valentine's Bakery", () => {
 	render(<LocationAndPath locationCode="VALEN" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent("Valentine's");
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(/valentine's/i);
 });
 
-test('Invalid Location Error', () => {
+it('Handles Invalid locationCode Props', () => {
+	const errorObject = console.error;
+	console.error = jest.fn();
+
 	render(<LocationAndPath locationCode="Tacodeli" />);
-	const locationHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(locationHeaderElement).toBeInTheDocument();
-	expect(locationHeaderElement).toHaveTextContent(
+	const locationHeader = screen.getByRole('heading', { level: 2 });
+	expect(locationHeader).toBeInTheDocument();
+	expect(locationHeader).toHaveTextContent(
 		/there was a problem loading the page/i
 	);
+
+	console.error = errorObject;
 });

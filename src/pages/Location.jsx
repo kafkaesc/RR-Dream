@@ -16,7 +16,12 @@ function Location() {
 	)[0];
 
 	if (!location) {
-		return <PageError uiMessage="No location found." />;
+		return (
+			<PageError
+				errorMessage={`Invalid locationCode passed into the Location component in /pages/Location.jsx: ${locationCode}`}
+				uiMessage="Unable to find that location."
+			/>
+		);
 	}
 
 	return (

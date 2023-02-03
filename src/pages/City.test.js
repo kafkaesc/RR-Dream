@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import City from './City';
 
-const CityAndPath = ({ cityCode }) => {
+function CityAndPath({ cityCode }) {
 	return (
 		<MemoryRouter initialEntries={[`/City/${cityCode}`]}>
 			<Routes>
@@ -10,62 +10,51 @@ const CityAndPath = ({ cityCode }) => {
 			</Routes>
 		</MemoryRouter>
 	);
-};
+}
 
-test('Dallas Loads', () => {
+it('Loads Dallas', () => {
 	render(<CityAndPath cityCode="DAL" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent('Dallas');
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/dallas/i);
 });
 
-test('Austin Loads', () => {
+it('Loads Austin', () => {
 	render(<CityAndPath cityCode="AUS" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent('Austin');
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/austin/i);
 });
 
-test('San Antonio Loads', () => {
+it('Loads San Antonio', () => {
 	render(<CityAndPath cityCode="SAN" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent('San Antonio');
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/san antonio/i);
 });
 
-test('Houston Loads', () => {
+it('Loads Houston', () => {
 	render(<CityAndPath cityCode="HOU" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent('Houston');
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/houston/i);
 });
 
-test('El Paso Loads', () => {
+it('Loads El Paso', () => {
 	render(<CityAndPath cityCode="ELP" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent('El Paso');
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/el paso/i);
 });
 
-test('Oklahoma City Fails', () => {
-	render(<CityAndPath cityCode="OKL" />);
-	const cityHeaderElement = screen.getByRole('heading', { level: 2 });
-	expect(cityHeaderElement).toBeInTheDocument();
-	expect(cityHeaderElement).toHaveTextContent(
-		/there was a problem loading the page/i
-	);
-});
-
-// Not used here but could be useful testing for thrown errors later.
-/*
-test('Invalid City Throws Error', () => {
+it('Handles Invalid cityCode Props', () => {
 	const errorObject = console.error;
 	console.error = jest.fn();
 
-	expect(() => render(<CityAndPath cityCode="OKL" />)).toThrow(
-		"Cannot read properties of undefined (reading 'id')"
-	);
+	render(<CityAndPath cityCode="OKL" />);
+	const cityHeader = screen.getByRole('heading', { level: 2 });
+	expect(cityHeader).toBeInTheDocument();
+	expect(cityHeader).toHaveTextContent(/there was a problem loading the page/i);
 
 	console.error = errorObject;
 });
-*/

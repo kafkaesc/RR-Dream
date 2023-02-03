@@ -1,50 +1,47 @@
 import { render, screen } from '@testing-library/react';
 import SocialLinks from './SocialLinks';
 
-test('Has GitHub Icon', () => {
+it('Has a GitHub Icon', () => {
 	render(<SocialLinks />);
-	const gitHubIconElement = screen.getByAltText('GitHub');
-	expect(gitHubIconElement).toBeInTheDocument();
+	const gitHubIcon = screen.getByRole('img', { name: 'GitHub Logo' });
+	expect(gitHubIcon).toBeInTheDocument();
 });
 
-test('Has GitHub Link', () => {
+it('Has a GitHub Link', () => {
 	render(<SocialLinks />);
-	const gitHubLinkElement = screen.getByRole('link', { name: 'GitHub' });
-	expect(gitHubLinkElement).toHaveAttribute(
-		'href',
-		'https://www.github.com/kafkaesc'
-	);
-	expect(gitHubLinkElement).toHaveAttribute('target', '_blank');
+	const gitHubLink = screen.getByRole('link', { name: 'GitHub Logo' });
+	expect(gitHubLink).toHaveAttribute('href', 'https://www.github.com/kafkaesc');
+	expect(gitHubLink).toHaveAttribute('target', '_blank');
 });
 
-test('Has Twitter Icon', () => {
+it('Has a Twitter Icon', () => {
 	render(<SocialLinks />);
-	const twitterIconElement = screen.getByAltText('Twitter');
-	expect(twitterIconElement).toBeInTheDocument();
+	const twitterIcon = screen.getByRole('img', { name: 'Twitter Logo' });
+	expect(twitterIcon).toBeInTheDocument();
 });
 
-test('Hast Twitter Link', () => {
+it('Has a Twitter Link', () => {
 	render(<SocialLinks />);
-	const twitterLinkElement = screen.getByRole('link', { name: 'Twitter' });
-	expect(twitterLinkElement).toHaveAttribute(
+	const twitterLink = screen.getByRole('link', { name: 'Twitter Logo' });
+	expect(twitterLink).toHaveAttribute(
 		'href',
 		'https://www.twitter.com/_kafkaesc'
 	);
-	expect(twitterLinkElement).toHaveAttribute('target', '_blank');
+	expect(twitterLink).toHaveAttribute('target', '_blank');
 });
 
-test('Has Instagram Icon', () => {
+it('Has an Instagram Icon', () => {
 	render(<SocialLinks />);
-	const instagramIconElement = screen.getByAltText('Instagram');
-	expect(instagramIconElement).toBeInTheDocument();
+	const instagramIcon = screen.getByRole('img', { name: 'Instagram Logo' });
+	expect(instagramIcon).toBeInTheDocument();
 });
 
-test('Has Instagram Link', () => {
+it('Has an Instagram Link', () => {
 	render(<SocialLinks />);
-	const instagramLinkElement = screen.getByRole('link', { name: 'Instagram' });
-	expect(instagramLinkElement).toHaveAttribute(
+	const instagramLink = screen.getByRole('link', { name: 'Instagram Logo' });
+	expect(instagramLink).toHaveAttribute(
 		'href',
 		'https://www.instagram.com/kafkaesc'
 	);
-	expect(instagramLinkElement).toHaveAttribute('target', '_blank');
+	expect(instagramLink).toHaveAttribute('target', '_blank');
 });

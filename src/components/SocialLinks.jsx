@@ -15,7 +15,7 @@ function SocialLinks() {
 					>
 						<a href={sl.url} rel="noreferrer" target="_blank">
 							<img
-								alt={sl.siteName}
+								alt={`${sl.siteName} Logo`}
 								className="h-8 mx-3"
 								src={require(`assets/images/social/${sl.siteName.toLowerCase()}.png`)}
 							/>
