@@ -1,20 +1,20 @@
 import { Link, useLocation } from 'react-router-dom';
 
-function NavigationItem({ title, to }) {
+function NavigationItem(props) {
+	const { title, to, ...rest } = props;
 	const { pathname } = useLocation();
-	const active = pathname === to;
 
 	return (
 		<>
-			{active ? (
+			{pathname === to ? (
 				<li className="inline-flex items-center h-10 px-2 bg-rail-black text-rail-pink">
-					<Link to={to} className="p-1">
+					<Link to={to} className="p-1" {...rest}>
 						{title}
 					</Link>
 				</li>
 			) : (
 				<li className="inline-flex items-center h-10 px-2 text-rail-white hover:bg-rail-black hover:text-rail-pink">
-					<Link to={to} className="p-1">
+					<Link to={to} className="p-1" {...rest}>
 						{title}
 					</Link>
 				</li>

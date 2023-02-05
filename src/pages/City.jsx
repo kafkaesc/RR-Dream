@@ -5,7 +5,8 @@ import P from 'elements/P';
 
 import ContentColumn from 'layout/ContentColumn';
 
-import LocationCard from 'components/LocationCard';
+//import LocationCard from 'components/LocationCard';
+import LocationList from 'components/LocationList';
 import PageError from 'components/PageError';
 
 const cities = require('data/cities.json');
@@ -32,15 +33,17 @@ function City() {
 			<P>Welcome to {city.name}</P>
 			<img
 				alt={`A street scene of ${city.name}.`}
+				className="mb-4"
 				src={require(`assets/images/${city.name
 					.toLowerCase()
 					.replace(' ', '-')}.jpg`)}
 			/>
-			{city.cityCode === 'DAL' && (
+			<LocationList locations={locations} />
+			{/*city.cityCode === 'DAL' && (
 				<div className="my-2">
 					<LocationCard location={locations[0]} />
 				</div>
-			)}
+			)*/}
 		</ContentColumn>
 	);
 }

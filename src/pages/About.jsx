@@ -5,11 +5,13 @@ import P from 'elements/P';
 import ContentColumn from 'layout/ContentColumn';
 
 import SocialLinks from 'components/SocialLinks';
+import Technologies from 'components/Technologies';
 
 function About() {
 	return (
 		<ContentColumn>
 			<H2>About</H2>
+			<Technologies />
 			<P>
 				This project is about two types of routes. The kind you can use with{' '}
 				<A href="https://reactrouter.com/" rel="noreferrer" target="_blank">
