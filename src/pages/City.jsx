@@ -6,10 +6,11 @@ import P from 'elements/P';
 import ContentColumn from 'layout/ContentColumn';
 
 //import LocationCard from 'components/LocationCard';
+import LocationList from 'components/LocationList';
 import PageError from 'components/PageError';
 
 const cities = require('data/cities.json');
-//const allLocations = require('data/locations.json');
+const allLocations = require('data/locations.json');
 
 function City() {
 	const { cityCode } = useParams();
@@ -22,7 +23,7 @@ function City() {
 			/>
 		);
 	}
-	//const locations = allLocations.filter((lo) => lo.cityId === city.id);
+	const locations = allLocations.filter((lo) => lo.cityId === city.id);
 
 	return (
 		<ContentColumn>
@@ -32,10 +33,12 @@ function City() {
 			<P>Welcome to {city.name}</P>
 			<img
 				alt={`A street scene of ${city.name}.`}
+				className="mb-4"
 				src={require(`assets/images/${city.name
 					.toLowerCase()
 					.replace(' ', '-')}.jpg`)}
 			/>
+			<LocationList locations={locations} />
 			{/*city.cityCode === 'DAL' && (
 				<div className="my-2">
 					<LocationCard location={locations[0]} />
