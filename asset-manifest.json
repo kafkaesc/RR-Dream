@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RR-Dream/static/css/main.8ff2d9e4.css",
-    "main.js": "/RR-Dream/static/js/main.fa6e4141.js",
+    "main.css": "/RR-Dream/static/css/main.6a149b99.css",
+    "main.js": "/RR-Dream/static/js/main.8e69a2c9.js",
     "static/js/787.cb31eccf.chunk.js": "/RR-Dream/static/js/787.cb31eccf.chunk.js",
     "static/media/jengc.jpg": "/RR-Dream/static/media/jengc.b162c114f9a0326d6591.jpg",
     "static/media/dallas.jpg": "/RR-Dream/static/media/dallas.a951e217dc2ea58c36d6.jpg",
@@ -12,13 +12,17 @@
     "static/media/san-antonio.jpg": "/RR-Dream/static/media/san-antonio.64973f03b07918b7f764.jpg",
     "static/media/larrivee-dun-train.jpg": "/RR-Dream/static/media/larrivee-dun-train.63f9de206c343a6d7b6a.jpg",
     "static/media/twitter.png": "/RR-Dream/static/media/twitter.9685c410a6499b9ebc16.png",
+    "static/media/jest.svg": "/RR-Dream/static/media/jest.e069757d1c74a55ccc3c44992b4ca5f3.svg",
+    "static/media/react-router.svg": "/RR-Dream/static/media/react-router.d3a3678be263c9df0964778f1151630c.svg",
+    "static/media/tailwindcss.svg": "/RR-Dream/static/media/tailwindcss.79614a5f61617ba49a0891494521226b.svg",
     "index.html": "/RR-Dream/index.html",
-    "main.8ff2d9e4.css.map": "/RR-Dream/static/css/main.8ff2d9e4.css.map",
-    "main.fa6e4141.js.map": "/RR-Dream/static/js/main.fa6e4141.js.map",
+    "static/media/react.svg": "/RR-Dream/static/media/react.928f956d9c8ebcffb98a8e917154a81a.svg",
+    "main.6a149b99.css.map": "/RR-Dream/static/css/main.6a149b99.css.map",
+    "main.8e69a2c9.js.map": "/RR-Dream/static/js/main.8e69a2c9.js.map",
     "787.cb31eccf.chunk.js.map": "/RR-Dream/static/js/787.cb31eccf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ff2d9e4.css",
-    "static/js/main.fa6e4141.js"
+    "static/css/main.6a149b99.css",
+    "static/js/main.8e69a2c9.js"
   ]
 }
