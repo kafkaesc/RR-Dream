@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RR-Dream/static/css/main.6a149b99.css",
-    "main.js": "/RR-Dream/static/js/main.8e69a2c9.js",
+    "main.css": "/RR-Dream/static/css/main.713326d9.css",
+    "main.js": "/RR-Dream/static/js/main.3e699a7b.js",
     "static/js/787.cb31eccf.chunk.js": "/RR-Dream/static/js/787.cb31eccf.chunk.js",
     "static/media/jengc.jpg": "/RR-Dream/static/media/jengc.b162c114f9a0326d6591.jpg",
     "static/media/dallas.jpg": "/RR-Dream/static/media/dallas.a951e217dc2ea58c36d6.jpg",
@@ -17,12 +17,12 @@
     "static/media/tailwindcss.svg": "/RR-Dream/static/media/tailwindcss.79614a5f61617ba49a0891494521226b.svg",
     "index.html": "/RR-Dream/index.html",
     "static/media/react.svg": "/RR-Dream/static/media/react.928f956d9c8ebcffb98a8e917154a81a.svg",
-    "main.6a149b99.css.map": "/RR-Dream/static/css/main.6a149b99.css.map",
-    "main.8e69a2c9.js.map": "/RR-Dream/static/js/main.8e69a2c9.js.map",
+    "main.713326d9.css.map": "/RR-Dream/static/css/main.713326d9.css.map",
+    "main.3e699a7b.js.map": "/RR-Dream/static/js/main.3e699a7b.js.map",
     "787.cb31eccf.chunk.js.map": "/RR-Dream/static/js/787.cb31eccf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a149b99.css",
-    "static/js/main.8e69a2c9.js"
+    "static/css/main.713326d9.css",
+    "static/js/main.3e699a7b.js"
   ]
 }
