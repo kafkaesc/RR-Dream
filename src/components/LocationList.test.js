@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import LocationList from './LocationList';
 
 const dummyLocations = [
@@ -21,13 +22,15 @@ const dummyLocations = [
 ];
 
 it('Displays Nothing If There Are No Locations', () => {
-	render(<LocationList />);
+	render(<LocationList />, { wrapper: MemoryRouter });
 	const componentHeadings = screen.queryByRole('heading');
 	expect(componentHeadings).not.toBeInTheDocument();
 });
 
 it('Has a Header If Passed Location(s)', () => {
-	render(<LocationList locations={dummyLocations} />);
+	render(<LocationList locations={dummyLocations} />, {
+		wrapper: MemoryRouter,
+	});
 	const componentHeader = screen.getByRole('heading', { level: 3 });
 	expect(componentHeader).toBeInTheDocument();
 	expect(componentHeader).toHaveTextContent(/places to see/i);
