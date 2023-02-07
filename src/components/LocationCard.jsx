@@ -1,5 +1,8 @@
 // TODO: Build out a location card.
 function LocationCard({ location }) {
+	if (!location) {
+		return null;
+	}
 	return (
 		<figure className="flex p-0 overflow-hidden bg-rail-white-dark rounded-xl">
 			<img
@@ -14,7 +17,7 @@ function LocationCard({ location }) {
 			<div className="p-4 pt-6 space-y-4 text-left md:p-8">
 				<blockquote>
 					<p className="text-md md:text-lg">
-						Jeng Chi Restaurant is a fantastic restaurant with a phenomenal
+						Jeng-Chi Restaurant is a fantastic restaurant with a phenomenal
 						menu. The green onion pancake is flaky, golden, and perfectly fried.
 						Their soup dumplings are hard to beat and you won't want to miss
 						their sliced fish in garlic sauce either.
