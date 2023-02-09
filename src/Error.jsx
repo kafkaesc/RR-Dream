@@ -4,13 +4,13 @@ import H1 from 'elements/H1';
 import Link from 'elements/Link';
 import P from 'elements/P';
 
-function Error() {
+export default function Error() {
 	const error = useRouteError();
 	console.error(error);
 
 	return (
 		<div className="error-page">
-			<div className="content-column text-center">
+			<div className="text-center content-column">
 				<H1>Error</H1>
 				<P>Oops! Looks like there was an error loading that page.</P>
 				<P>
@@ -18,12 +18,10 @@ function Error() {
 				</P>
 				<img
 					alt="A derailed steam locomotive hangs out the second floor of a train station."
-					className="mx-auto max-w-lg"
+					className="max-w-lg mx-auto"
 					src={require('assets/images/crash.jpg')}
 				/>
 			</div>
 		</div>
 	);
 }
-
-export default Error;

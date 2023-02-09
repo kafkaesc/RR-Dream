@@ -1,4 +1,4 @@
-function ContentColumn(props) {
+export default function ContentColumn(props) {
 	const classNames = props.className
 		? 'max-w-4xl px-4 mx-auto ' + props.className
 		: 'max-w-4xl px-4 mx-auto';
@@ -8,5 +8,3 @@ function ContentColumn(props) {
 		</div>
 	);
 }
-
-export default ContentColumn;

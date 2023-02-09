@@ -1,6 +1,6 @@
 import A from 'elements/A';
 
-function Attributions() {
+export default function Attributions() {
 	return (
 		<ul className="pl-4 mb-4 list-disc">
 			<li>
@@ -92,5 +92,3 @@ function Attributions() {
 		</ul>
 	);
 }
-
-export default Attributions;

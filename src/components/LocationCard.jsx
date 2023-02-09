@@ -1,5 +1,5 @@
 // TODO: Build out a location card.
-function LocationCard({ location }) {
+export default function LocationCard({ location }) {
 	if (!location) {
 		return null;
 	}
@@ -27,5 +27,3 @@ function LocationCard({ location }) {
 		</figure>
 	);
 }
-
-export default LocationCard;

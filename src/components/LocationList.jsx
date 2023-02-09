@@ -1,7 +1,7 @@
 import H3 from 'elements/H3';
 import Link from 'elements/Link';
 
-function LocationList({ locations }) {
+export default function LocationList({ locations }) {
 	if (!locations) {
 		return null;
 	}
@@ -21,5 +21,3 @@ function LocationList({ locations }) {
 		</>
 	);
 }
-
-export default LocationList;

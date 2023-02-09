@@ -3,7 +3,7 @@ import P from 'elements/P';
 
 import ContentColumn from 'layout/ContentColumn';
 
-function Home() {
+export default function Home() {
 	return (
 		<ContentColumn className="text-center">
 			<H2>Home</H2>
@@ -16,5 +16,3 @@ function Home() {
 		</ContentColumn>
 	);
 }
-
-export default Home;

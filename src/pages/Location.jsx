@@ -8,7 +8,7 @@ import PageError from 'components/PageError';
 
 const locations = require('data/locations.json');
 
-function Location() {
+export default function Location() {
 	const { locationCode } = useParams();
 	const location = locations.filter(
 		(lo) => lo.locationCode === locationCode
@@ -30,5 +30,3 @@ function Location() {
 		</ContentColumn>
 	);
 }
-
-export default Location;

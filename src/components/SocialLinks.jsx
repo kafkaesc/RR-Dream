@@ -6,7 +6,7 @@ const socialLinks = [
 	{ siteName: 'Instagram', url: 'https://www.instagram.com/kafkaesc' },
 ];
 
-function SocialLinks() {
+export default function SocialLinks() {
 	return (
 		<ul className="mb-2 text-center list-none">
 			{socialLinks.map((sl) => {
@@ -30,5 +30,3 @@ function SocialLinks() {
 		</ul>
 	);
 }
-
-export default SocialLinks;

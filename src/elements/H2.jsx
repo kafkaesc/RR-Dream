@@ -1,4 +1,4 @@
-function H2(props) {
+export default function H2(props) {
 	const classNames = props.className
 		? 'my-4 text-4xl ' + props.className
 		: 'my-4 text-4xl';
@@ -7,5 +7,3 @@ function H2(props) {
 	// eslint-disable-next-line
 	return <h2 {...props} className={classNames}></h2>;
 }
-
-export default H2;

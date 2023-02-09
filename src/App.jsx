@@ -8,7 +8,7 @@ import NavigationBar from 'layout/NavigationBar';
 import './output.css';
 import './App.css';
 
-function App() {
+export default function App() {
 	return (
 		<div className="app">
 			<AppHeader>
@@ -21,5 +21,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;

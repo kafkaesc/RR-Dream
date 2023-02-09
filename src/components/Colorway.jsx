@@ -1,6 +1,6 @@
 import ColorBox from 'components/ColorBox';
 
-function Colorway() {
+export default function Colorway() {
 	return (
 		<ul className="mb-2 text-center">
 			<ColorBox className="bg-rail-darkblue" />
@@ -11,5 +11,3 @@ function Colorway() {
 		</ul>
 	);
 }
-
-export default Colorway;

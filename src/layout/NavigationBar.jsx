@@ -1,6 +1,6 @@
 import NavigationItem from './NavigationItem';
 
-function NavigationBar() {
+export default function NavigationBar() {
 	return (
 		<nav className="w-full text-center bg-rail-darkblue">
 			<ul className="list-none">
@@ -15,5 +15,3 @@ function NavigationBar() {
 		</nav>
 	);
 }
-
-export default NavigationBar;

@@ -1,4 +1,4 @@
-function ColorBox({ className }) {
+export default function ColorBox({ className }) {
 	if (!className) {
 		return null;
 	}
@@ -8,5 +8,3 @@ function ColorBox({ className }) {
 		></li>
 	);
 }
-
-export default ColorBox;

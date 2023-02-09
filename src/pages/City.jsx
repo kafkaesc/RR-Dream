@@ -12,7 +12,7 @@ import PageError from 'components/PageError';
 const cities = require('data/cities.json');
 const allLocations = require('data/locations.json');
 
-function City() {
+export default function City() {
 	const { cityCode } = useParams();
 	const city = cities.find((ci) => ci.cityCode === cityCode);
 	if (!city) {
@@ -47,5 +47,3 @@ function City() {
 		</ContentColumn>
 	);
 }
-
-export default City;

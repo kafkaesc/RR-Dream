@@ -10,7 +10,7 @@ import Colorway from 'components/Colorway';
 import SocialLinks from 'components/SocialLinks';
 import Technologies from 'components/Technologies';
 
-function About() {
+export default function About() {
 	return (
 		<ContentColumn>
 			<H2 className="text-center">About</H2>
@@ -85,5 +85,3 @@ function About() {
 		</ContentColumn>
 	);
 }
-
-export default About;

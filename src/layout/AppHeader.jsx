@@ -1,4 +1,4 @@
-function AppHeader(props) {
+export default function AppHeader(props) {
 	const classNames = props.className
 		? 'flex items-center justify-center h-32 text-white bg-rail-black ' +
 		  props.className
@@ -9,5 +9,3 @@ function AppHeader(props) {
 		</header>
 	);
 }
-
-export default AppHeader;

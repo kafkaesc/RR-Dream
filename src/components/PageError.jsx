@@ -4,7 +4,7 @@ import P from 'elements/P';
 
 import ContentColumn from 'layout/ContentColumn';
 
-function PageError({ errorMessage, uiMessage }) {
+export default function PageError({ errorMessage, uiMessage }) {
 	console.error(
 		errorMessage
 			? errorMessage
@@ -20,5 +20,3 @@ function PageError({ errorMessage, uiMessage }) {
 		</ContentColumn>
 	);
 }
-
-export default PageError;

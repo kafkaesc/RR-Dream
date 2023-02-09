@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 
-function NavigationItem(props) {
+export default function NavigationItem(props) {
 	const { title, to, ...rest } = props;
 	const { pathname } = useLocation();
 
@@ -22,5 +22,3 @@ function NavigationItem(props) {
 		</>
 	);
 }
-
-export default NavigationItem;

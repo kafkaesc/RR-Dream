@@ -7,7 +7,7 @@ import ReactRouterLogo from 'assets/images/tech/react-router.svg';
 import TailwindLogo from 'assets/images/tech/tailwindcss.svg';
 import JestLogo from 'assets/images/tech/jest.svg';
 
-function Technologies() {
+export default function Technologies() {
 	return (
 		<ul className="list-none">
 			<li className="inline-block w-1/5 p-3">
@@ -60,5 +60,3 @@ function Technologies() {
 		</ul>
 	);
 }
-
-export default Technologies;

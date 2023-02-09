@@ -1,4 +1,4 @@
-function A(props) {
+export default function A(props) {
 	const classNames = props.className
 		? 'text-link-blue hover:underline ' + props.className
 		: 'text-link-blue hover:underline';
@@ -7,5 +7,3 @@ function A(props) {
 	// eslint-disable-next-line
 	return <a {...props} className={classNames}></a>;
 }
-
-export default A;
